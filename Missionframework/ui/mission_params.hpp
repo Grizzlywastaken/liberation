@@ -21,7 +21,7 @@ class Params {
         title = $STR_PARAMS_UNITCAP;
         values[] = {0, 1, 2, 3, 4, 5};
         texts[] = {$STR_PARAMS_UNITCAP1, $STR_PARAMS_UNITCAP2, $STR_PARAMS_UNITCAP3, $STR_PARAMS_UNITCAP4, $STR_PARAMS_UNITCAP5, $STR_PARAMS_UNITCAP6};
-        default = 2;
+        default = 3;
     };
     class Difficulty {
         title = $STR_PARAMS_DIFFICULTY;
@@ -45,7 +45,7 @@ class Params {
         title = $STR_PARAMS_CIVILIANS;
         values[] = {0, 1, 2, 3};
         texts[] = {$STR_PARAMS_CIVILIANS1, $STR_PARAMS_CIVILIANS2, $STR_PARAMS_CIVILIANS3, $STR_PARAMS_CIVILIANS4};
-        default = 2;
+        default = 1;
     };
     class FirstFob {
         title = $STR_PARAMS_FIRSTFOB;
@@ -75,7 +75,7 @@ class Params {
         title = $STR_PARAM_BLUFOR_DEFENDERS;
         values[] = {1, 0};
         texts[] = {$STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED};
-        default = 1;
+        default = 0;
     };
     class Autodanger {
         title = $STR_PARAM_AUTODANGER;
@@ -111,13 +111,13 @@ class Params {
         title = $STR_PARAMS_RESOURCESMULTIPLIER;
         values[] = {0, 1, 2, 3, 4, 5, 6, 7};
         texts[] = {"x0.25", "x0.5", "x0.75", "x1", "x1.25","x1.5","x2","x3"};
-        default = 3;
+        default = 6;
     };
     class ArsenalType {
         title = $STR_PARAMS_ARSENAL;
         values[] = {0, 1};
         texts[] = {$STR_PARAMS_ARSENAL_BI, $STR_PARAMS_ARSENAL_ACE};
-        default = 0;
+        default = 1;
     };
     class DirectArsenal {
         title = $STR_PARAMS_DIRECTARSENAL;
@@ -153,7 +153,7 @@ class Params {
         title = $STR_A3_ReviveMode;
         values[] = {0, 1};
         texts[] = {$STR_A3_Disabled, $STR_A3_EnabledForAllPlayers};
-        default = 1;
+        default = 0;
     };
     class ReviveDuration {
         title = $STR_A3_ReviveDuration;
@@ -213,7 +213,7 @@ class Params {
         title = $STR_PARAMS_FATIGUE;
         values[] = {0, 1};
         texts[] = {$STR_PARAMS_DISABLED, $STR_PARAMS_ENABLED};
-        default = 1;
+        default = 0;
     };
     class WeaponSway {
         title = $STR_PARAM_WEAPSWAY;
@@ -249,19 +249,19 @@ class Params {
         title = $STR_PARAMS_MOBILEARSENAL;
         values[] = {0, 1};
         texts[] = {$STR_PARAMS_DISABLED, $STR_PARAMS_ENABLED};
-        default = 1;
+        default = 0;
     };
     class AttackedSectorRespawn {
         title = $STR_PARAMS_ATTACKEDSECTORRESPAWN;
         values[] = {0, 1};
         texts[] = {$STR_PARAMS_DISABLED, $STR_PARAMS_ENABLED};
-        default = 0;
+        default = 1;
     };
     class AiLogistics {
         title = $STR_PARAMS_AILOGISTICS;
         values[] = {0, 1};
         texts[] = {$STR_PARAMS_DISABLED, $STR_PARAMS_ENABLED};
-        default = 1;
+        default = 0;
     };
     class CR_Building {
         title = $STR_PARAM_CR_BUILDING;
@@ -303,7 +303,7 @@ class Params {
         title = $STR_PARAM_LIMITEDZEUS;
         values[] = {1, 0};
         texts[] = {$STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED};
-        default = 1;
+        default = 0;
     };
     class ZeusAddEnemies {
         title = $STR_PARAM_ZEUSADDENEMIES;
@@ -357,7 +357,7 @@ class Params {
         title = $STR_PARAMS_INTRO;
         values[] = {1, 0};
         texts[] = {$STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED};
-        default = 1;
+        default = 0;
     };
     class DeploymentCinematic {
         title = $STR_PARAMS_DEPLOYMENTCAMERA;
@@ -369,13 +369,13 @@ class Params {
         title = $STR_WHITELIST_PARAM;
         values[] = {1, 0};
         texts[] = {$STR_WHITELIST_ENABLED, $STR_PARAMS_DISABLED};
-        default = 0;
+        default = 1;
     };
     class ServerRestart {
         title = $STR_RESTART_PARAM;
         values[] = {0, 1, 2, 3, 4, 5, 6};
         texts[] = {$STR_PARAMS_DISABLED, "1", "2", "3", "4", "5", "6"};
-        default = 0;
+        default = 5;
     };
     class WipeSave1 {
         title = $STR_WIPE_TITLE;

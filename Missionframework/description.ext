@@ -21,11 +21,11 @@
 class Header {
     gameType = "CTI";
     minPlayers = 1;
-    maxPlayers = 34;
+    maxPlayers = 40;
 };
 
 // Name of Mission author(s) and contributors. Obviously you can only add and not (!) remove someone.
-author = "[GREUH] Zbug & McKeewa, KP Liberation Dev Team";
+author = "S-2 Intelligence Team";
 
 
 /*
@@ -37,10 +37,10 @@ briefingName = $STR_MISSION_TITLE;
 
 // Path to image which will be displayed when the mission is highlighted on the mission selection screen.
 // Image should be .paa format and in 2:1 aspect ratio – ideally 1024x512 (Arma 3).
-overviewPicture = "res\lib.paa";
+overviewPicture = "res\deploying.jpg";
 
 // Text to be displayed below the overviewPicture on the mission selection screen
-overviewText = "www.killahpotatoes.de";
+overviewText = "Our mission is to execute a precise and strategic invasion of Altis, neutralizing enemy forces and securing key strategic points to establish control. With a focus on swift and coordinated operations, our objective is to dismantle opposition, ensuring the stability and dominance of our forces in the region.";
 
 
 /*
@@ -53,10 +53,10 @@ onLoadName = $STR_MISSION_TITLE;
 
 // You can define a picture to be shown while the mission is loaded.
 // The path is relative to the mission folder.
-loadScreen = "res\lib.paa";
+loadScreen = "res\charges.paa";
 
 // Displays a message while the mission is loading below the loadScreen picture.
-onLoadMission = "www.killahpotatoes.de";
+onLoadMission = "Time to silence the chatter, Rangers. Clock in, load up, and prepare for the mission ahead.";
 
 
 /*
@@ -87,7 +87,7 @@ respawnTemplates[] = {};
 respawn = 3;
 
 // Set respawn delay in seconds.
-respawndelay = 5;
+respawndelay = 10;
 
 // Show the scoreboard and respawn countdown timer for a player if he is killed with respawn type BASE.
 respawnDialog = 0;

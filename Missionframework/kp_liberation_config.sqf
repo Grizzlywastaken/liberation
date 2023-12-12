@@ -109,7 +109,7 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 28 = SFP (Woodland)
 29 = SFP (Desert)
 30 = LDF (Contact DLC) */
-KP_liberation_preset_blufor = 0;
+KP_liberation_preset_blufor = 6;
 
 /* OPFOR preset:
 0  = Custom (default vanilla CSAT)
@@ -133,7 +133,7 @@ KP_liberation_preset_blufor = 0;
 18 = CUP Chernarus Defense Force
 19 = CUP British Armed Forces (Desert)
 20 = CUP British Armed Forces (Woodland) */
-KP_liberation_preset_opfor = 0;
+KP_liberation_preset_opfor = 3;
 
 /* Resistance preset:
 0  = Custom (default vanilla FIA)
@@ -145,7 +145,7 @@ KP_liberation_preset_opfor = 0;
 6  = Unsung
 7  = CUP Takistani Locals
 8  = CUP National Party of Chernarus */
-KP_liberation_preset_resistance = 0;
+KP_liberation_preset_resistance = 2;
 
 /* Civilians preset:
 0  = Custom (default vanilla)
@@ -202,14 +202,14 @@ GRLIB_color_friendly = "ColorBLUFOR";                                   // Frien
 GRLIB_color_enemy = "ColorOPFOR";                                       // Enemy sector marker color.
 GRLIB_color_enemy_bright = "ColorRED";                                  // Enemy sector marker color (activated).
 
-GRLIB_fob_range = 125;                                                  // Build range around the main FOB building.
+GRLIB_fob_range = 500;                                                  // Build range around the main FOB building.
 GRLIB_halo_altitude = 2500;                                             // Altitude in metres for the HALO jump.
 GRLIB_secondary_missions_costs = [15, 10, 8];                           // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
 GRLIB_secondary_objective_impact = 0.6;                                 // The percentage impact against enemy combat readiness for a successful FOB hunt.
-GRLIB_recycling_percentage = 0.5;                                       // Percentage of resources you get back from recycling.
+GRLIB_recycling_percentage = 0.8;                                       // Percentage of resources you get back from recycling.
 KP_liberation_production_interval = 30;                                 // Time in minutes until a production process is finished, when resources multiplier is set to 1.
 
-GRLIB_sector_size = 1000;                                               // Range to activate a sector.
+GRLIB_sector_size = 500;                                               // Range to activate a sector.
 GRLIB_capture_size = 175;                                               // Range to capture a sector.
 GRLIB_defended_buildingpos_part = 0.4;                                  // Multiplier for defenders in buildings.
 GRLIB_battlegroup_size = 6;                                             // Size of enemy battlegroups.
@@ -217,7 +217,7 @@ GRLIB_vulnerability_timer = 1200;                                       // Time 
 GRLIB_radiotower_size = 2500;                                           // Radio Tower scanning range.
 GRLIB_surrender_chance = 80;                                            // Chance that enemy infantry will surrender after heavy losses are encountered.
 
-GRLIB_civilians_amount = 10;                                            // Civilian count multiplier.
+GRLIB_civilians_amount = 1;                                            // Civilian count multiplier.
 GRLIB_cleanup_delay = 1200;                                             // Time in seconds until bodies of dead soldiers are cleaned up.
 
 GRLIB_blufor_cap = 100;                                                 // Cap for BLUFOR.
@@ -260,18 +260,15 @@ KP_liberation_battlegroup_clearance = [
 The Steam UIDs entered in this array will allow corresponding players to access the commander actions (rights, production, etc.),
 even if they are not in the commander slot. */
 KP_liberation_commander_actions = [
-    /*
-    Example:
-    "1324678",
-    "5468711",
-    "2156347"
-    */
+    "76561198405262544",
+    "76561198143149053"
 ];
 
 /* Whitelist for BI support framework access.
 Same format as for the commander actions. */
 KP_liberation_suppMod_whitelist = [
-
+    "76561198405262544",
+    "76561198143149053"
 ];
 
 /* Array of radio tower classnames to place at radio tower sectors.
@@ -284,146 +281,7 @@ KPLIB_radioTowerClassnames = [
 Useless if you're using anything other than "kp_liberation_arsenal = 0;" above. A whitelisted arsenal is always more performance friendly then a blacklisted arsenal.
 REMEMBER: All static turret and UAV bags should be defined here, to stop players from exploiting free resources via the virtual arsenal.    */
 blacklisted_from_arsenal = [
-    "B_AA_01_weapon_F",
-    "B_AT_01_weapon_F",
-    "B_GMG_01_A_weapon_F",
-    "B_GMG_01_high_weapon_F",
-    "B_GMG_01_weapon_F",
-    "B_HMG_01_A_weapon_F",
-    "B_HMG_01_high_weapon_F",
-    "B_HMG_01_support_F",
-    "B_HMG_01_support_high_F",
-    "B_HMG_01_weapon_F",
-    "B_Mortar_01_support_F",
-    "B_Mortar_01_weapon_F",
-    "B_Respawn_Sleeping_bag_blue_F",
-    "B_Respawn_Sleeping_bag_brown_F",
-    "B_Respawn_Sleeping_bag_F",
-    "B_Respawn_TentA_F",
-    "B_Respawn_TentDome_F",
-    "B_UAV_01_backpack_F",
-    "B_UAV_06_backpack_F",
-    "B_UAV_06_medical_backpack_F",
-    "B_UGV_02_Demining_backpack_F",
-    "B_UGV_02_Science_backpack_F",
-    "C_IDAP_UAV_01_backpack_F",
-    "C_IDAP_UAV_06_antimine_backpack_F",
-    "C_IDAP_UAV_06_backpack_F",
-    "C_IDAP_UAV_06_medical_backpack_F",
-    "C_IDAP_UGV_02_Demining_backpack_F",
-    "C_UAV_06_backpack_F",
-    "C_UAV_06_medical_backpack_F",
-    "I_AA_01_weapon_F",
-    "I_AT_01_weapon_F",
-    "I_C_HMG_02_high_weapon_F",
-    "I_C_HMG_02_support_F",
-    "I_C_HMG_02_support_high_F",
-    "I_C_HMG_02_weapon_F",
-    "I_E_AA_01_weapon_F",
-    "I_E_AT_01_weapon_F",
-    "I_E_GMG_01_A_Weapon_F",
-    "I_E_GMG_01_high_Weapon_F",
-    "I_E_GMG_01_Weapon_F",
-    "I_E_HMG_01_A_Weapon_F",
-    "I_E_HMG_01_high_Weapon_F",
-    "I_E_HMG_01_support_F",
-    "I_E_HMG_01_support_high_F",
-    "I_E_HMG_01_Weapon_F",
-    "I_E_HMG_02_high_weapon_F",
-    "I_E_HMG_02_support_F",
-    "I_E_HMG_02_support_high_F",
-    "I_E_HMG_02_weapon_F",
-    "I_E_Mortar_01_support_F",
-    "I_E_Mortar_01_Weapon_F",
-    "I_E_UAV_01_backpack_F",
-    "I_E_UAV_06_backpack_F",
-    "I_E_UAV_06_medical_backpack_F",
-    "I_E_UGV_02_Demining_backpack_F",
-    "I_E_UGV_02_Science_backpack_F",
-    "I_G_HMG_02_high_weapon_F",
-    "I_G_HMG_02_support_F",
-    "I_G_HMG_02_support_high_F",
-    "I_G_HMG_02_weapon_F",
-    "I_GMG_01_A_weapon_F",
-    "I_GMG_01_high_weapon_F",
-    "I_GMG_01_weapon_F",
-    "I_HMG_01_A_weapon_F",
-    "I_HMG_01_high_weapon_F",
-    "I_HMG_01_support_F",
-    "I_HMG_01_support_high_F",
-    "I_HMG_01_weapon_F",
-    "I_HMG_02_high_weapon_F",
-    "I_HMG_02_support_F",
-    "I_HMG_02_support_high_F",
-    "I_HMG_02_weapon_F",
-    "I_Mortar_01_support_F",
-    "I_Mortar_01_weapon_F",
-    "I_UAV_01_backpack_F",
-    "I_UAV_06_backpack_F",
-    "I_UAV_06_medical_backpack_F",
-    "I_UGV_02_Demining_backpack_F",
-    "I_UGV_02_Science_backpack_F",
-    "O_AA_01_weapon_F",
-    "O_AT_01_weapon_F",
-    "O_GMG_01_A_weapon_F",
-    "O_GMG_01_high_weapon_F",
-    "O_GMG_01_weapon_F",
-    "O_HMG_01_A_weapon_F",
-    "O_HMG_01_high_weapon_F",
-    "O_HMG_01_support_F",
-    "O_HMG_01_support_high_F",
-    "O_HMG_01_weapon_F",
-    "O_Mortar_01_support_F",
-    "O_Mortar_01_weapon_F",
-    "O_UAV_01_backpack_F",
-    "O_UAV_06_backpack_F",
-    "O_UAV_06_medical_backpack_F",
-    "O_UGV_02_Demining_backpack_F",
-    "O_UGV_02_Science_backpack_F",
-    "RHS_AGS30_Gun_Bag",
-    "RHS_AGS30_Tripod_Bag",
-    "RHS_DShkM_Gun_Bag",
-    "RHS_DShkM_TripodHigh_Bag",
-    "RHS_DShkM_TripodLow_Bag",
-    "RHS_Kord_Gun_Bag",
-    "RHS_Kord_Tripod_Bag",
-    "RHS_Kornet_Gun_Bag",
-    "RHS_Kornet_Tripod_Bag",
-    "RHS_M2_Gun_Bag",
-    "RHS_M2_MiniTripod_Bag",
-    "RHS_M2_Tripod_Bag",
-    "rhs_M252_Bipod_Bag",
-    "rhs_M252_Gun_Bag",
-    "RHS_Metis_Gun_Bag",
-    "RHS_Metis_Tripod_Bag",
-    "RHS_Mk19_Gun_Bag",
-    "RHS_Mk19_Tripod_Bag",
-    "RHS_NSV_Gun_Bag",
-    "RHS_NSV_Tripod_Bag",
-    "RHS_Podnos_Bipod_Bag",
-    "RHS_Podnos_Gun_Bag",
-    "RHS_SPG9_Gun_Bag",
-    "RHS_SPG9_Tripod_Bag",
-    "rhs_Tow_Gun_Bag",
-    "rhs_TOW_Tripod_Bag",
-    "UK3CB_BAF_L111A1",
-    "UK3CB_BAF_L134A1",
-    "UK3CB_BAF_L16_Tripod",
-    "UK3CB_BAF_L16",
-    "UK3CB_BAF_M6",
-    "UK3CB_BAF_Tripod",
-    "uns_M1_81mm_mortar_US_Bag",
-    "uns_M1919_low_US_Bag",
-    "uns_M2_60mm_mortar_US_Bag",
-    "uns_m2_high_US_Bag",
-    "uns_M2_low_US_Bag",
-    "uns_M30_107mm_mortar_US_Bag",
-    "uns_M60_high_US_Bag",
-    "uns_M60_low_US_Bag",
-    "uns_MK18_low_US_Bag",
-    "uns_STABO_US_Bag",
-    "uns_Tripod_Bag",
-    "Uns_US_searchlight_Bag"
+
 ];
 
 // Items which should be added as allowed Items, when they get blacklisted, even if they are not in the blacklisted_from_arsenal array
