@@ -183,7 +183,7 @@ class Missions
 {
     class kp_liberation
     {
-        template = "kp_liberation.Altis";
+        template = "4RB_liberation.Altis";
         difficulty = "custom";
     };
 };
