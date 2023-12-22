@@ -1,4 +1,4 @@
-![KP Liberation](https://www.killahpotatoes.de/images/arma/liberation.png)
+![KP Liberation](https://i.imgur.com/YhA47Ya.png)
 
 # KP Liberation for Arma 3
 
