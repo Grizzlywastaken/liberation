@@ -12,8 +12,9 @@ GRLIB_whitelisted_tags = [
 // To know that information: https://steamid.io/
 GRLIB_whitelisted_steamids = [
 "76561198405262544",
+"76561198260102852",
+"76561198383488191",
 "76561198799781662",
-"76561198117574291",
 "76561198143149053"
 ];
 

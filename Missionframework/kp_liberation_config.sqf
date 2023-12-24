@@ -58,11 +58,13 @@ KP_liberation_medical_vehicles = [
 KP_liberation_medical_facilities = [
     "Land_Medevac_house_V1_F",
     "Land_Medevac_HQ_V1_F",
+    "Land_MedicalTent_01_tropic_closed_F",
     "LAND_uns_army_med",
     "LAND_uns_tent3mash",
     "uns_mash_main",
     "uns_mash",
     "US_Tent_2",
+    "Land_Cargo20_red_F",
     "US_Tent_MASH"
 ];
 
@@ -109,7 +111,7 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 28 = SFP (Woodland)
 29 = SFP (Desert)
 30 = LDF (Contact DLC) */
-KP_liberation_preset_blufor = 6;
+KP_liberation_preset_blufor = 0;
 
 /* OPFOR preset:
 0  = Custom (default vanilla CSAT)
@@ -133,7 +135,7 @@ KP_liberation_preset_blufor = 6;
 18 = CUP Chernarus Defense Force
 19 = CUP British Armed Forces (Desert)
 20 = CUP British Armed Forces (Woodland) */
-KP_liberation_preset_opfor = 3;
+KP_liberation_preset_opfor = 0;
 
 /* Resistance preset:
 0  = Custom (default vanilla FIA)
@@ -176,7 +178,7 @@ KP_liberation_preset_civilians = 0;
 14 = CSAT Green Hex arsenal preset
 15 = AAF arsenal preset
 16 = LDF arsenal preset */
-KP_liberation_arsenal = 0;
+KP_liberation_arsenal = 1;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine. */
@@ -202,12 +204,12 @@ GRLIB_color_friendly = "ColorBLUFOR";                                   // Frien
 GRLIB_color_enemy = "ColorOPFOR";                                       // Enemy sector marker color.
 GRLIB_color_enemy_bright = "ColorRED";                                  // Enemy sector marker color (activated).
 
-GRLIB_fob_range = 500;                                                  // Build range around the main FOB building.
+GRLIB_fob_range = 850;                                                  // Build range around the main FOB building.
 GRLIB_halo_altitude = 2500;                                             // Altitude in metres for the HALO jump.
 GRLIB_secondary_missions_costs = [15, 10, 8];                           // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
 GRLIB_secondary_objective_impact = 0.6;                                 // The percentage impact against enemy combat readiness for a successful FOB hunt.
-GRLIB_recycling_percentage = 0.8;                                       // Percentage of resources you get back from recycling.
-KP_liberation_production_interval = 30;                                 // Time in minutes until a production process is finished, when resources multiplier is set to 1.
+GRLIB_recycling_percentage = 0.9;                                       // Percentage of resources you get back from recycling.
+KP_liberation_production_interval = 3;                                 // Time in minutes until a production process is finished, when resources multiplier is set to 1.
 
 GRLIB_sector_size = 500;                                               // Range to activate a sector.
 GRLIB_capture_size = 175;                                               // Range to capture a sector.
@@ -261,6 +263,10 @@ The Steam UIDs entered in this array will allow corresponding players to access 
 even if they are not in the commander slot. */
 KP_liberation_commander_actions = [
     "76561198405262544",
+    "76561198260102852",
+    "76561198383488191",
+    "76561198799781662",
+    "76561198117574291",
     "76561198143149053"
 ];
 
@@ -268,6 +274,9 @@ KP_liberation_commander_actions = [
 Same format as for the commander actions. */
 KP_liberation_suppMod_whitelist = [
     "76561198405262544",
+    "76561198260102852",
+    "76561198383488191",
+    "76561198799781662",
     "76561198143149053"
 ];
 
