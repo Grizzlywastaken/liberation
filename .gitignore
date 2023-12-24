@@ -2,6 +2,9 @@
 Thumbs.db
 ehthumbs.db
 
+# Visual Studio Code
+/.vscode
+
 # Folder config file
 Desktop.ini
 
@@ -48,8 +51,8 @@ Temporary Items
 
 # Build directory
 /build/
-/_tools/build/
-/_tools/node_modules/
+/Tools/build/
+/Tools/node_modules/
 
 # KP-Steam
 steam_appid.txt
