@@ -17,9 +17,7 @@
 [![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/KillahPotatoes/KP-Liberation.svg)](https://github.com/KillahPotatoes/KP-Liberation/pulls)
 [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/KillahPotatoes/KP-Liberation.svg)](https://github.com/KillahPotatoes/KP-Liberation/pulls?q=is%3Apr+is%3Aclosed)
 
-[![KP Discord](https://img.shields.io/discord/154937272368758784?label=Discord)](https://discord.gg/Qk35Sw8)
-
-[BI Forum Thread](https://forums.bistudio.com/topic/202711-mpcti-coop-liberation-continued/)
+[![Nix Discord](https://img.shields.io/discord/1055203372887711854?label=Discord)](https://discord.gg/wd9t4yDV)
 
 [Steam Workshop](http://steamcommunity.com/id/wyqer/myworkshopfiles/?appid=107410)
 
