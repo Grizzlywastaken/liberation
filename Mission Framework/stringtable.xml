@@ -46,10 +46,10 @@
 <Project name="Liberation">
     <Package name="Liberation">
         <Key ID="STR_MISSION_TITLE">
-            <Original>4RB LIBERATION v1.0.6</Original>
+            <Original>4RB LIBERATION v1.0.8</Original>
         </Key>
         <Key ID="STR_MISSION_VERSION">
-            <Original>v1.0.6a</Original>
+            <Original>v1.0.8a</Original>
         </Key>
         <Key ID="STR_Deploy_OnPoint">
             <Original>Deploy</Original>
